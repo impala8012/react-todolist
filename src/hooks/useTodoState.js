@@ -6,7 +6,7 @@ const useTodoState = (initailTodos) => {
   const id = useRef(1);
   const addTodo = (newTodoText) => {
     if (newTodoText === "") return;
-    console.log(id);
+    // console.log(id);
     // 更新
     setTodos([
       ...todos,
@@ -22,17 +22,17 @@ const useTodoState = (initailTodos) => {
   };
 
   const toggleTodo = (todoId) => {
-    const UpdatedTodo = todos.map((todo) =>
+    const updatedTodo = todos.map((todo) =>
       todo.id === todoId ? { ...todo, completed: !todo.completed } : todo
     );
-    setTodos(UpdatedTodo);
+    setTodos(updatedTodo);
   };
 
   const editTodo = (todoId, newTask) => {
-    const UpdatedTodo = todos.map((todo) =>
+    const updatedTodo = todos.map((todo) =>
       todo.id === todoId ? { ...todo, task: newTask } : todo
     );
-    setTodos(UpdatedTodo);
+    setTodos(updatedTodo);
   };
 
   const showAllTodo = () => setFilter("all");

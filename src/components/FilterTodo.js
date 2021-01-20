@@ -21,10 +21,10 @@ function FilterTodo({
   return (
     <div>
       <Filter>
-        <button onClick={showAllTodo}>全部</button>
-        <button onClick={showCompletedTodo}>已完成</button>
-        <button onClick={showIncompletedTodo}>未完成</button>
-        <button onClick={clearAll}>刪除全部</button>
+        <button onClick={showAllTodo}>ALL</button>
+        <button onClick={showCompletedTodo}>COMPLETED</button>
+        <button onClick={showIncompletedTodo}>INCOMPLETED</button>
+        <button onClick={clearAll}>DELETE ALL</button>
       </Filter>
     </div>
   );

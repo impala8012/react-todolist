@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import TodoList from "./TodoList";
 import TodoForm from "./TodoForm";
-import useTodoState from "./hooks/useTodoState";
+import useTodoState from "../hooks/useTodoState";
 import styled from "styled-components";
 import FilterTodo from "./FilterTodo";
 
@@ -11,6 +11,7 @@ const Container = styled.div`
   padding: 5px 10px 35px;
   background: #d7e684;
   color: white;
+  border-radius: 10px;
 
   h1 {
     font-size: 32px;

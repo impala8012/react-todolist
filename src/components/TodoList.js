@@ -1,6 +1,5 @@
 import React from "react";
 import Todo from "./Todo";
-import styled from "styled-components";
 
 function TodoList({ todos, removeTodo, toggleTodo, editTodo, filter }) {
   return (

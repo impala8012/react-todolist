@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import useInputState from "./hooks/useInputState";
+import useInputState from "../hooks/useInputState";
 
 const Form = styled.form`
   text-align: center;

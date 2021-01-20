@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import useInputState from "./hooks/useInputState";
+import useInputState from "../hooks/useInputState";
 
 const Form = styled.form`
   text-align: center;
 
   input {
     outline: none;
-    width: 450px;
+    width: 500px;
     height: 25px;
     margin: 0 5px;
     border-radius: 5px;
@@ -22,7 +22,7 @@ const Form = styled.form`
 function TodoForm({ addTodo }) {
   const [value, handleChange, reset] = useInputState("");
   return (
-    <div className="form">
+    <div>
       <Form
         onSubmit={(e) => {
           e.preventDefault();
